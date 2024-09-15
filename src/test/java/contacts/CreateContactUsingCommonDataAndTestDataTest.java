@@ -29,7 +29,6 @@ public void  createContactUsingCommonDataAndTestData() throws EncryptedDocumentE
 		// create new contact by entering the data
 		CreateContactPage ccp = new CreateContactPage(driver);
 		ccp.createNewContact(LASTNAME);
-		Assert.fail();
 		// validating
 		ContactInformationPage cip = new ContactInformationPage(driver);
 		String contactHeader = cip.captureContactInfoumationText();
