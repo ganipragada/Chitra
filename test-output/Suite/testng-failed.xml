@@ -3,17 +3,39 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="contacts.CreateContactUsingCommonDataAndTestData">
+      <class name="contacts.CreateContactWithLeadSourceTest">
         <methods>
           <include name="dataBaseConnectionClose"/>
           <include name="applicationLunching"/>
           <include name="browserConnection"/>
           <include name="closeTheBrowser"/>
           <include name="applicationSignOut"/>
-          <include name="createContactUsingCommonDataAndTestData"/>
+          <include name="createContactWithLeadSource"/>
           <include name="dataBaseConnection"/>
         </methods>
-      </class> <!-- contacts.CreateContactUsingCommonDataAndTestData -->
+      </class> <!-- contacts.CreateContactWithLeadSourceTest -->
+      <class name="contacts.DeleteAllContactsTest">
+        <methods>
+          <include name="dataBaseConnectionClose"/>
+          <include name="applicationLunching"/>
+          <include name="browserConnection"/>
+          <include name="closeTheBrowser"/>
+          <include name="deleteAllContacts"/>
+          <include name="applicationSignOut"/>
+          <include name="dataBaseConnection"/>
+        </methods>
+      </class> <!-- contacts.DeleteAllContactsTest -->
+      <class name="contacts.CreateContactUsingCommonDataAndTestDataTest">
+        <methods>
+          <include name="dataBaseConnectionClose"/>
+          <include name="createContactUsingCommonDataAndTestData"/>
+          <include name="applicationLunching"/>
+          <include name="browserConnection"/>
+          <include name="closeTheBrowser"/>
+          <include name="applicationSignOut"/>
+          <include name="dataBaseConnection"/>
+        </methods>
+      </class> <!-- contacts.CreateContactUsingCommonDataAndTestDataTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

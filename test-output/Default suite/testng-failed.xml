@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.retryAnalyzerPractice">
+      <class name="contacts.CreateContactUsingCommonDataAndTestDataTest">
         <methods>
-          <include name="analyzer"/>
+          <include name="createContactUsingCommonDataAndTestData"/>
+          <include name="dataBaseConnectionClose"/>
+          <include name="applicationLunching"/>
+          <include name="browserConnection"/>
+          <include name="closeTheBrowser"/>
+          <include name="applicationSignOut"/>
+          <include name="dataBaseConnection"/>
         </methods>
-      </class> <!-- practice.retryAnalyzerPractice -->
+      </class> <!-- contacts.CreateContactUsingCommonDataAndTestDataTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
