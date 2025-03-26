@@ -10,9 +10,9 @@ public class RetryAnalyzerImplimentation  implements IRetryAnalyzer{
 		// TODO Auto-generated method stub
 		while(count < retryCount) {
 			count++;
-			return true;
+			return true;//true means it's retrying 
 		}
-		return false;
+		return false;//false means it's stopping 
 	}
 
 }

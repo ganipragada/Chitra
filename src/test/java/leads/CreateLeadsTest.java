@@ -3,6 +3,7 @@ package leads;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtilities.BaseClass;
@@ -10,7 +11,9 @@ import objectRepository.CreateLeadsPage;
 import objectRepository.HomePage;
 import objectRepository.LeadInformationPage;
 import objectRepository.LeadsPage;
+@Listeners(genericUtilities.ListenersImplimentation.class)
 public class CreateLeadsTest extends BaseClass  {
+	
 	@Test
 	public void  createLeads() throws EncryptedDocumentException, IOException { 
 	

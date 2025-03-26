@@ -96,7 +96,7 @@ public class ListenersImplimentation implements ITestListener {
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		System.out.println("-----Suite execution finish---------");
-		report.flush();
+		report.flush();//it's like assert all method 
 	}
 
 }

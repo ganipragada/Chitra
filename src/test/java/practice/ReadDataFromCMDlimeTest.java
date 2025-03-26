@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class ReadDataFromCMDlimeTest {
 	@Test
 	public void read() {
-		String UN = System.getProperty("userName");
+		String UN = System.getProperty("username");
 		String PS = System.getProperty("password");
 		System.out.println(UN);
 		System.out.println(PS);

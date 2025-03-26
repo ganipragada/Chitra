@@ -18,7 +18,7 @@ public class BaseClass {
 	public SeleniumUtilities sUtil = new SeleniumUtilities();
 	public JavaUtilities jUtil = new JavaUtilities();
 	public PropertyFileUtilities pUtil = new PropertyFileUtilities();
-   public ExcelFileUtilities eUtil = new ExcelFileUtilities();
+    public ExcelFileUtilities eUtil = new ExcelFileUtilities();
 	public WebDriver driver;
 	public static WebDriver sDriver;//for listeners only
 

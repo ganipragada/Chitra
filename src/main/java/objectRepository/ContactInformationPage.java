@@ -28,4 +28,4 @@ public class ContactInformationPage { // step no : 1
 	{
 		return contactInformationText.getText();		
 	}
-}
+} 
