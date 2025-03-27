@@ -14,7 +14,7 @@ import objectRepository.CreateContactPage;
 import objectRepository.HomePage;
 @Listeners(genericUtilities.ListenersImplimentation.class)
 public class CreateContactWithLeadSourceTest extends BaseClass {
-	@Test
+	@Test(groups = "smokeSuite")
 	public void createContactWithLeadSource() throws EncryptedDocumentException, IOException{
 	// read a text data from Excel file
 			String LASTNAME = eUtil.readDataFromExcelFile("Contacts", 1, 2);

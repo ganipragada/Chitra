@@ -14,7 +14,7 @@ import objectRepository.LeadsPage;
 @Listeners(genericUtilities.ListenersImplimentation.class)
 public class CreateLeadsTest extends BaseClass  {
 	
-	@Test
+	@Test(groups = "smokeSuite")
 	public void  createLeads() throws EncryptedDocumentException, IOException { 
 	
 		// READ DATA FROME EXCEL FILES

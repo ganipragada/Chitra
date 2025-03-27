@@ -14,7 +14,7 @@ import objectRepository.LeadsPage;
 
 @Listeners(genericUtilities.ListenersImplimentation.class)
 public class DeleteFirstLeadTest extends BaseClass {
-	@Test
+	@Test(groups = "smokeSuite")
 	public void deleteFirstLead() {
 
 		HomePage hp = new HomePage(driver);
