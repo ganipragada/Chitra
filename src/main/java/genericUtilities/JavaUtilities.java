@@ -9,5 +9,10 @@ public class JavaUtilities {
 		String date = sDate[2] + "_" + sDate[1] + "_" + sDate[5] + " " + sDate[3].replace(":", "_");
 		return  date;
 	}
+	public int getSum(int a, int b) {
+		int c = a+b;
+		return c;	
+	}
+	
 
 }

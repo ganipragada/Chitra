@@ -1,90 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-27T18:07:48 IST" name="Suite" finished-at="2025-03-27T18:08:45 IST" duration-ms="57616">
+  <suite started-at="2025-04-19T18:12:32 IST" name="Default suite" finished-at="2025-04-19T18:13:07 IST" duration-ms="34885">
     <groups>
-      <group name="smokeSuite">
-        <method signature="CreateContactWithLeadSourceTest.createContactWithLeadSource()[pri:0, instance:contacts.CreateContactWithLeadSourceTest@3f191845]" name="createContactWithLeadSource" class="contacts.CreateContactWithLeadSourceTest"/>
-        <method signature="CreateLeadsTest.createLeads()[pri:0, instance:leads.CreateLeadsTest@5f049ea1]" name="createLeads" class="leads.CreateLeadsTest"/>
-        <method signature="DeleteFirstLeadTest.deleteFirstLead()[pri:0, instance:leads.DeleteFirstLeadTest@28261e8e]" name="deleteFirstLead" class="leads.DeleteFirstLeadTest"/>
-      </group> <!-- smokeSuite -->
     </groups>
-    <test started-at="2025-03-27T18:07:48 IST" name="Test" finished-at="2025-03-27T18:08:45 IST" duration-ms="57616">
-      <class name="leads.CreateLeadsTest">
-        <test-method is-config="true" signature="browserConnection()[pri:0, instance:leads.CreateLeadsTest@5f049ea1]" started-at="2025-03-27T18:08:25 IST" name="browserConnection" finished-at="2025-03-27T18:08:27 IST" duration-ms="1959" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserConnection -->
-        <test-method is-config="true" signature="applicationLunching()[pri:0, instance:leads.CreateLeadsTest@5f049ea1]" started-at="2025-03-27T18:08:27 IST" name="applicationLunching" finished-at="2025-03-27T18:08:35 IST" duration-ms="7817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationLunching -->
-        <test-method signature="createLeads()[pri:0, instance:leads.CreateLeadsTest@5f049ea1]" started-at="2025-03-27T18:08:35 IST" name="createLeads" finished-at="2025-03-27T18:08:43 IST" duration-ms="8125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLeads -->
-        <test-method is-config="true" signature="applicationSignOut()[pri:0, instance:leads.CreateLeadsTest@5f049ea1]" started-at="2025-03-27T18:08:43 IST" name="applicationSignOut" finished-at="2025-03-27T18:08:45 IST" duration-ms="2114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationSignOut -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:leads.CreateLeadsTest@5f049ea1]" started-at="2025-03-27T18:08:45 IST" name="closeTheBrowser" finished-at="2025-03-27T18:08:45 IST" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-      </class> <!-- leads.CreateLeadsTest -->
-      <class name="leads.DeleteFirstLeadTest">
-        <test-method is-config="true" signature="dataBaseConnection()[pri:0, instance:leads.DeleteFirstLeadTest@28261e8e]" started-at="2025-03-27T18:07:48 IST" name="dataBaseConnection" finished-at="2025-03-27T18:07:48 IST" duration-ms="14" status="PASS">
+    <test started-at="2025-04-19T18:12:32 IST" name="Default test" finished-at="2025-04-19T18:13:07 IST" duration-ms="34885">
+      <class name="origanizations.CreateOppotunitiesWithValidCridentialsTest">
+        <test-method is-config="true" signature="dataBaseConnection()[pri:0, instance:origanizations.CreateOppotunitiesWithValidCridentialsTest@3cd3e762]" started-at="2025-04-19T18:12:32 IST" name="dataBaseConnection" finished-at="2025-04-19T18:12:32 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataBaseConnection -->
-        <test-method is-config="true" signature="browserConnection()[pri:0, instance:leads.DeleteFirstLeadTest@28261e8e]" started-at="2025-03-27T18:07:48 IST" name="browserConnection" finished-at="2025-03-27T18:07:50 IST" duration-ms="2347" status="PASS">
+        <test-method is-config="true" signature="browserConnection()[pri:0, instance:origanizations.CreateOppotunitiesWithValidCridentialsTest@3cd3e762]" started-at="2025-04-19T18:12:32 IST" name="browserConnection" finished-at="2025-04-19T18:12:39 IST" duration-ms="6882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConnection -->
-        <test-method is-config="true" signature="applicationLunching()[pri:0, instance:leads.DeleteFirstLeadTest@28261e8e]" started-at="2025-03-27T18:07:50 IST" name="applicationLunching" finished-at="2025-03-27T18:07:58 IST" duration-ms="7905" status="PASS">
+        <test-method is-config="true" signature="applicationLunching()[pri:0, instance:origanizations.CreateOppotunitiesWithValidCridentialsTest@3cd3e762]" started-at="2025-04-19T18:12:39 IST" name="applicationLunching" finished-at="2025-04-19T18:12:49 IST" duration-ms="9943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationLunching -->
-        <test-method signature="deleteFirstLead()[pri:0, instance:leads.DeleteFirstLeadTest@28261e8e]" started-at="2025-03-27T18:07:58 IST" name="deleteFirstLead" finished-at="2025-03-27T18:08:02 IST" duration-ms="4143" status="PASS">
+        <test-method signature="createOppotunitiesonWithValidCridentialsTest()[pri:0, instance:origanizations.CreateOppotunitiesWithValidCridentialsTest@3cd3e762]" started-at="2025-04-19T18:12:49 IST" name="createOppotunitiesonWithValidCridentialsTest" finished-at="2025-04-19T18:13:01 IST" duration-ms="11903" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: unknown
+at org.openqa.selenium.By$ByClassName.<init>(By.java:309)
+at org.openqa.selenium.By.className(By.java:100)
+at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:42)
+at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:83)
+at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:82)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:58)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:46)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:32)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76)
+at objectRepository.OrganizationsWindowPage.<init>(OrganizationsWindowPage.java:32)
+at origanizations.CreateOppotunitiesWithValidCridentialsTest.createOppotunitiesonWithValidCridentialsTest(CreateOppotunitiesWithValidCridentialsTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteFirstLead -->
-        <test-method is-config="true" signature="applicationSignOut()[pri:0, instance:leads.DeleteFirstLeadTest@28261e8e]" started-at="2025-03-27T18:08:02 IST" name="applicationSignOut" finished-at="2025-03-27T18:08:05 IST" duration-ms="2794" status="PASS">
+        </test-method> <!-- createOppotunitiesonWithValidCridentialsTest -->
+        <test-method is-config="true" signature="applicationSignOut()[pri:0, instance:origanizations.CreateOppotunitiesWithValidCridentialsTest@3cd3e762]" started-at="2025-04-19T18:13:01 IST" name="applicationSignOut" finished-at="2025-04-19T18:13:07 IST" duration-ms="6008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationSignOut -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:leads.DeleteFirstLeadTest@28261e8e]" started-at="2025-03-27T18:08:05 IST" name="closeTheBrowser" finished-at="2025-03-27T18:08:05 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:origanizations.CreateOppotunitiesWithValidCridentialsTest@3cd3e762]" started-at="2025-04-19T18:13:07 IST" name="closeTheBrowser" finished-at="2025-04-19T18:13:07 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="dataBaseConnectionClose()[pri:0, instance:leads.DeleteFirstLeadTest@28261e8e]" started-at="2025-03-27T18:08:46 IST" name="dataBaseConnectionClose" finished-at="2025-03-27T18:08:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="dataBaseConnectionClose()[pri:0, instance:origanizations.CreateOppotunitiesWithValidCridentialsTest@3cd3e762]" started-at="2025-04-19T18:13:07 IST" name="dataBaseConnectionClose" finished-at="2025-04-19T18:13:07 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataBaseConnectionClose -->
-      </class> <!-- leads.DeleteFirstLeadTest -->
-      <class name="contacts.CreateContactWithLeadSourceTest">
-        <test-method is-config="true" signature="browserConnection()[pri:0, instance:contacts.CreateContactWithLeadSourceTest@3f191845]" started-at="2025-03-27T18:08:05 IST" name="browserConnection" finished-at="2025-03-27T18:08:07 IST" duration-ms="1826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserConnection -->
-        <test-method is-config="true" signature="applicationLunching()[pri:0, instance:contacts.CreateContactWithLeadSourceTest@3f191845]" started-at="2025-03-27T18:08:07 IST" name="applicationLunching" finished-at="2025-03-27T18:08:15 IST" duration-ms="7870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationLunching -->
-        <test-method signature="createContactWithLeadSource()[pri:0, instance:contacts.CreateContactWithLeadSourceTest@3f191845]" started-at="2025-03-27T18:08:15 IST" name="createContactWithLeadSource" finished-at="2025-03-27T18:08:23 IST" duration-ms="7770" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithLeadSource -->
-        <test-method is-config="true" signature="applicationSignOut()[pri:0, instance:contacts.CreateContactWithLeadSourceTest@3f191845]" started-at="2025-03-27T18:08:23 IST" name="applicationSignOut" finished-at="2025-03-27T18:08:25 IST" duration-ms="2326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationSignOut -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:contacts.CreateContactWithLeadSourceTest@3f191845]" started-at="2025-03-27T18:08:25 IST" name="closeTheBrowser" finished-at="2025-03-27T18:08:25 IST" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-      </class> <!-- contacts.CreateContactWithLeadSourceTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- origanizations.CreateOppotunitiesWithValidCridentialsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

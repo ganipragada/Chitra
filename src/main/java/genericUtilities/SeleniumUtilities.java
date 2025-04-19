@@ -57,7 +57,7 @@ public class SeleniumUtilities {
 	 * this method will wait the program implicitly
 	 * 
 	 * @param driver
-	 * @param i 
+	 * @param i
 	 */
 	public void implicitWait(WebDriver driver, int duration) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(duration));
@@ -104,7 +104,7 @@ public class SeleniumUtilities {
 	}
 
 	/**
-	 * this method will handle dropdown by index
+	 * this method will handle drop-down by index
 	 * 
 	 * @param element
 	 * @param integer
@@ -115,7 +115,7 @@ public class SeleniumUtilities {
 	}
 
 	/**
-	 * this method will handle dropdown by value
+	 * this method will handle drop-down by value
 	 * 
 	 * @param element
 	 * @param value
@@ -127,7 +127,7 @@ public class SeleniumUtilities {
 	}
 
 	/**
-	 * this method will handle dropdown by index value
+	 * this method will handle drop-down by index value
 	 * 
 	 * @param value
 	 * @param element
@@ -185,7 +185,7 @@ public class SeleniumUtilities {
 	}
 
 	/**
-	 * this method will perform scroll down action on the webpage
+	 * this method will perform scroll down action on the web-page
 	 * 
 	 * @param driver
 	 * @param x
@@ -193,21 +193,21 @@ public class SeleniumUtilities {
 	 */
 	public void scrollDownAction(WebDriver driver, int X, int Y) {
 		JavascriptExecutor je = (JavascriptExecutor) driver;
-		je.executeScript("window.scrollBy( "+X+","+Y+");", " " );
+		je.executeScript("window.scrollBy( " + X + "," + Y + ");", " ");
 	}
 
 	/**
-	 * this method will accept the alart popup
+	 * this method will accept the alert popup
 	 * 
 	 * @param driver
-	 * @param  
+	 * @param
 	 */
 	public void acceptAlart(WebDriver driver) {
 		driver.switchTo().alert().accept();
 	}
 
 	/**
-	 * this method will dismiss alart popup
+	 * this method will dismiss alert popup
 	 * 
 	 * @param driver
 	 */
@@ -216,7 +216,7 @@ public class SeleniumUtilities {
 	}
 
 	/**
-	 * this mehtod will capchure the text in alart popup return it to coller
+	 * this method will capture the text in alert popup return it to caller
 	 * 
 	 * @param driver
 	 * @return
@@ -228,7 +228,7 @@ public class SeleniumUtilities {
 
 	/**
 	 * 
-	 * this method will handel frame by frameIndex
+	 * this method will handle frame by frameIndex
 	 * 
 	 * @param driver
 	 * @param frameIndex
@@ -238,7 +238,7 @@ public class SeleniumUtilities {
 	}
 
 	/**
-	 * this method will handle frame by frame by useing name or id
+	 * this method will handle frame by frame by using name or id
 	 * 
 	 * @param driver
 	 * @param frameNameId
@@ -248,7 +248,7 @@ public class SeleniumUtilities {
 	}
 
 	/**
-	 * this method will handle Frame By frame Elemelnt
+	 * this method will handle Frame By frame Element
 	 * 
 	 * @param driver
 	 * @param element
@@ -262,7 +262,7 @@ public class SeleniumUtilities {
 	 * 
 	 * @param driver
 	 * @param screenshotName
-	 * @return 
+	 * @return
 	 * @throws IOException
 	 */
 	public String captureScreenShot(WebDriver driver, String screenshotName) throws IOException {
@@ -283,11 +283,26 @@ public class SeleniumUtilities {
 	public void handleWindows(WebDriver driver, String expParatilTitle) {
 		// Capture all windows IDs
 		Set<String> allWindows = driver.getWindowHandles();
-		// navigate throught each windo ID
+		// navigate through each window ID
 		for (String windID : allWindows) {
 			String actTitle = driver.switchTo().window(windID).getTitle();
 			if (actTitle.contains(expParatilTitle)) {
+				System.out.println("Switched to window with title: " + actTitle);
+				break;
 			}
 		}
 	}
+	
+	public boolean switchToWindowWithTitle(WebDriver driver, String expPartialTitle) {
+	    Set<String> allWindowHandles = driver.getWindowHandles();
+
+	    for (String windowHandle : allWindowHandles) {
+	        driver.switchTo().window(windowHandle);
+	        if (driver.getTitle().contains(expPartialTitle)) {
+	            return true;
+	        }
+	    }
+	    return false; // Not found
+	}
+
 }

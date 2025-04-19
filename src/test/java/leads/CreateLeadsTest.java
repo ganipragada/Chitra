@@ -24,14 +24,14 @@ public class CreateLeadsTest extends BaseClass  {
 		// Step 3 : click on leads link
 		HomePage hp = new HomePage(driver);
 		hp.clickonLeadsLink();
-		// Step 4 : Click on Create leads loolup imeage
+		// Step 4 : Click on Create leads lookup imeage
 		LeadsPage lep = new LeadsPage(driver);
 		lep.createLeadsLookUpImg();
-		// step 5 : enthe lastname text feald
+		// step 5 : enter lastname text fiald
 		CreateLeadsPage clp = new CreateLeadsPage(driver);
 		clp.lastNameEdt(LASTNAME);
 		System.out.println(LASTNAME);
-		// step 6 : enthe company neme text feald
+		// step 6 : enter company name text field
 		clp.compenyName(COMPENY);
 		System.out.println(COMPENY);
 		// step 7 : Select Lead Source dropdown

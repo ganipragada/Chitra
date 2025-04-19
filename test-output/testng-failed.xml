@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.retryAnalyzerPracticeTest">
+      <class name="origanizations.CreateOppotunitiesWithValidCridentialsTest">
         <methods>
-          <include name="analyzer"/>
+          <include name="dataBaseConnectionClose"/>
+          <include name="browserConnection"/>
+          <include name="applicationLunching"/>
+          <include name="closeTheBrowser"/>
+          <include name="applicationSignOut"/>
+          <include name="dataBaseConnection"/>
+          <include name="createOppotunitiesonWithValidCridentialsTest"/>
         </methods>
-      </class> <!-- practice.retryAnalyzerPracticeTest -->
+      </class> <!-- origanizations.CreateOppotunitiesWithValidCridentialsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

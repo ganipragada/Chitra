@@ -13,7 +13,7 @@ public class CreateContactPage extends SeleniumUtilities { // Step no : 1
 	@FindBy(xpath ="(//input[@title='Save [Alt+S]'])[1]") private WebElement saveButton;
 	@FindBy(name="leadsource") private WebElement leadSourceDroupDown;
 	
-	//step no: 3 intialization
+	//step no: 3 initialization
 	public CreateContactPage(WebDriver driver) {
 		PageFactory.initElements( driver , this);
 		
@@ -30,7 +30,7 @@ public class CreateContactPage extends SeleniumUtilities { // Step no : 1
 		return saveButton;
 	}
 	 
-	//step no : business Libraty
+	//step no : business Library
 	public void createNewContact(String lastName) {
 		lastNameEdt.sendKeys(lastName);
 		saveButton.click();

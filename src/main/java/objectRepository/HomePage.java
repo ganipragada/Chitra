@@ -22,6 +22,8 @@ public class HomePage extends SeleniumUtilities {// step no 1
 	private WebElement leads;
 	@FindBy(linkText = "Contacts")
 	private WebElement contacts;
+	@FindBy(linkText = "Opportunities")
+	private WebElement OpportunitiesLnk;
 	@FindBy(css = "img[src='themes/softed/images/user.PNG']")
 	private WebElement administratorImg;
 	@FindBy(linkText = "Sign Out")
@@ -44,6 +46,9 @@ public class HomePage extends SeleniumUtilities {// step no 1
 	public WebElement getContacts() {
 		return contacts;
 	}
+	public WebElement getOpportunitiesLnk() {
+		return OpportunitiesLnk;
+	}
 
 	public WebElement getAdministratorImg() {
 		return administratorImg;
@@ -53,7 +58,7 @@ public class HomePage extends SeleniumUtilities {// step no 1
 		return signOut;
 	}
 
-	// step no 5 : business library -genaric method -Opreate on elemtnts in current
+	// step no 5 : business library -generic method -Operate on elements in current
 	// POM class only
 	public void clickonContactsLink() {
 		contacts.click();
@@ -65,6 +70,9 @@ public class HomePage extends SeleniumUtilities {// step no 1
 
 	public void clickonLeadsLink() {
 		leads.click();
+	}
+	public void clickonOpportunitiesLnk() {
+		OpportunitiesLnk.click();
 	}
 
 	/**

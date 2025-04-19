@@ -1,6 +1,7 @@
 package genericUtilities;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +11,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+
 
 import objectRepository.HomePage;
 import objectRepository.LoginPage;
@@ -21,10 +23,15 @@ public class BaseClass {
     public ExcelFileUtilities eUtil = new ExcelFileUtilities();
 	public WebDriver driver;
 	public static WebDriver sDriver;//for listeners only
-
+	public DataBaseUtilities dUtil = new DataBaseUtilities();	
+	
+	
 	@BeforeSuite(alwaysRun = true) 
-	public void dataBaseConnection() {
-		System.out.println("=======DATA BASE CONNECT SUCCSSFULL======");
+	public void dataBaseConnection() throws SQLException  {
+		System.out.println("mysql database connection start");
+		dUtil.getConnection("jdbc:mysql://localhost:3306/gani", "root", "Gani123@");
+	
+		
 	}
 
 	@BeforeClass(alwaysRun = true) 
@@ -62,7 +69,8 @@ public class BaseClass {
 	}
 	
 	@AfterSuite(alwaysRun = true) 
-	public void dataBaseConnectionClose() {
+	public void dataBaseConnectionClose() throws SQLException {
+		dUtil.closeConnection();
 		System.out.println("=============data base connection close =========");
 	}
 }

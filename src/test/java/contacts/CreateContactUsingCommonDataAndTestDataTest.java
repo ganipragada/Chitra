@@ -1,11 +1,13 @@
 package contacts;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 
 import genericUtilities.BaseClass;
 import objectRepository.ContactInformationPage;
@@ -15,8 +17,9 @@ import objectRepository.HomePage;
 @Listeners(genericUtilities.ListenersImplimentation.class)
 public class CreateContactUsingCommonDataAndTestDataTest extends BaseClass {
 	@Test
-public void  createContactUsingCommonDataAndTestData() throws EncryptedDocumentException, IOException {
+public void  createContactUsingCommonDataAndTestData() throws EncryptedDocumentException, IOException, SQLException {
 		// read a text data from Excel file
+		
 		String LASTNAME = eUtil.readDataFromExcelFile("Contacts", 1, 2);
 		// click on contact link
 		HomePage hp = new HomePage(driver);

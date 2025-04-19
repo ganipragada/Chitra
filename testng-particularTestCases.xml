@@ -11,7 +11,7 @@
       <class name="leads.DeleteFirstLeadTest"/>
       <class name="contacts.CreateContactWithLeadSourceTest"/>
       <class name="leads.CreateLeadsTest"/>
-      <class name="contacts.CreateContactUsingCommonDataAndTestDataTest.java"/>
+      <class name="contacts.CreateContactUsingCommonDataAndTestDataTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
