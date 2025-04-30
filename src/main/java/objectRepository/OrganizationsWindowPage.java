@@ -24,6 +24,9 @@ public class OrganizationsWindowPage {
 	private WebElement inDdl;
 	@FindBy(className = "crmbutton small create")
 	private WebElement searchBtn;
+    @FindBy(xpath = "//table[contains(@style,'rgb(204, 204, 204);')]/tbody/tr[2]/td[1]")
+    private WebElement searchResultTxt;
+  
     WebDriver dri = new ChromeDriver();
 	String windowTitel = dri.getTitle();
 	// initialization
@@ -46,7 +49,11 @@ public class OrganizationsWindowPage {
 		return searchBtn;
 	}
 
-     //Business library's 
+     public WebElement getSearchResultTxt() {
+		return searchResultTxt;
+	}
+
+	//Business library's 
 	/**
 	 * This method click on search box and provide string value 
 	 * @param name
